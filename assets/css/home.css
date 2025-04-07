@@ -26,6 +26,17 @@
     scroll-snap-align: center;
 }
 
+.titlecard_items > section h1 {
+   font-size: 32pt;
+   margin: 5vh 0;
+}
+
+.titlecard_items > section p {
+   font-size: 18pt;
+   font-weight: normal;
+   margin: 2vh 0;
+}
+
 footer {
     scroll-snap-align: center;
 }
@@ -62,7 +73,7 @@ footer {
 	padding: 10px 20px;
 	text-decoration: none;
 	border: #00000052 4px solid;
-	color: #ffffffd1;
+	color: white;
 	width: 300px;
 	font-size: 18pt;
 	font-weight: bold;
@@ -134,13 +145,16 @@ footer {
     background-size: cover;
 }
 
-.card_programmer {
+.card_programmer,
+.card_art,
+.card_youtube,
+.card_indie {
 	flex-direction: row !important;
 }
 
 .card_programmer_left {
 	background-color: rgba(27, 54, 204, 0.53);
-	color: rgba(255, 255, 255, 0.89);
+	color: white;
 	padding: 0 30px;
 	margin: auto;
 	backdrop-filter: blur(10px);
@@ -159,17 +173,6 @@ footer {
     width: 100%;
 }
 
-.card_programmer_left > h1 {
-   font-size: 32pt;
-   margin: 5vh 0;
-}
-
-.card_programmer_left > p {
-   font-size: 18pt;
-   font-weight: normal;
-   margin: 2vh 0;
-}
-
 .card_programmer_right {
 	background-image: url("../../assets/images/home/test_img.png");
 	display: block;
@@ -183,7 +186,6 @@ footer {
 
 .card_indie {
     background-color: blue;
-	flex-direction: row !important;
 }
 
 .card_indie_left {
@@ -199,7 +201,7 @@ footer {
 
 .card_indie_right {
 	background-color: rgba(70, 96, 238, 0.26);
-	color: rgba(255, 255, 255, 0.89);
+	color: white;
 	padding: 0 30px;
 	margin: auto;
 	backdrop-filter: blur(10px);
@@ -213,25 +215,112 @@ footer {
 	margin-right: 10vw;
 }
 
-.card_indie_bg {
-    background-color: black;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.card_art {
+	background-color: black;
+	background-image: url("../../assets/images/home/card_art_bg.jpg"); 
 }
 
-.card_indie_bg1 {
-    background-image: url("../../assets/images/home/card_indie_bg1.jpg"); 
+.card_art_left {
+	background-color: rgba(27, 204, 146, 0.32);
+	color: white;
+	padding: 0 30px;
+	margin: auto;
+	backdrop-filter: blur(10px);
+	width: 500px;
+	min-height: inherit;
+	flex-direction: column;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+	margin-left: 10vw;
+    margin-right: 10vw;
 }
 
-.card_indie_bg2 {
-    background-image: url("../../assets/images/home/card_indie_bg2.jpg"); 
+.card_art_left_button {
+    width: 100%;
 }
 
-.card_indie_bg3 {
-    background-image: url("../../assets/images/home/card_indie_bg3.jpg"); 
+.card_art_left > h1 {
+   font-size: 32pt;
+   margin: 5vh 0;
 }
+
+.card_art_left > p {
+   font-size: 18pt;
+   font-weight: normal;
+   margin: 2vh 0;
+}
+
+.card_art_right {
+	background-image: url("../../assets/images/home/test_img.png");
+	display: block;
+	width: 100vw;
+    	min-height: inherit;
+	background-position-y: center;
+	background-position-x: right;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.card_art_right .card_button {
+	background-color: #0b6468bd;
+}
+
+.card_art_right .card_button:hover {
+	background-color: #0badb5bd;
+}
+
+.card_youtube {
+	background-color: black;
+	background-image: url("../../assets/images/home/card_youtube_bg.jpg"); 
+}
+
+.card_youtube a {
+	text-decoration: none;
+	color: white;
+	transition: color 0.5s;
+}
+
+.card_youtube a:hover {
+	color: #ffcb00;
+}
+
+.card_youtube_left {
+	background-image: url("../../assets/images/home/test_img.png");
+	display: block;
+	min-width: 100vw;
+	min-height: inherit;
+	background-position-y: center;
+	background-position-x: left;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.card_youtube_right {
+	background-color: rgba(153, 15, 15, 0.50);
+	color: white;
+	padding: 0 30px;
+	margin: auto;
+	backdrop-filter: blur(10px);
+	width: 500px;
+	min-height: inherit;
+	flex-direction: column;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+	margin-right: 10vw;
+}
+
+.card_youtube_right .card_button {
+	background-color: #680b0bbd;
+}
+
+.card_youtube_right .card_button:hover {
+	background-color: #06959bbd;
+}
+
 
 .end_animation {
     animation-name: home_title_intro_out;

@@ -39,6 +39,38 @@
 		</div>
 	</section>
 	
+	<section class="card_art">
+		<div class="card_art_right">
+			<div class="card_art_left">
+				<h1>{{ page.art_text1 }}</h1>
+				<p>{{ page.art_text2 }}</p>
+				<p>{{ page.art_text3 }}</p>
+				<p>{{ page.art_text4 }}</p>
+				{% if page.art_button %}
+				<div class="card_art_left_button">
+					<button class="card_button">{{ page.art_button_text }}</button>
+				</div>
+				{% endif %}
+			</div>
+		</div>
+	</section>
+	
+	<section class="card_youtube">
+		<div class="card_youtube_left">
+			<div class="card_youtube_right">
+				<h1>{{ page.youtube_text1 }}</h1>
+				<p>{{ page.youtube_text2 }}</p>
+				<p>{{ page.youtube_text3 }}</p>
+				<p>{{ page.youtube_text4 }}</p>
+				{% if page.youtube_button %}
+				<div class="card_youtube_left_button">
+					<button class="card_button">{{ page.youtube_button_text }}</button>
+				</div>
+				{% endif %}
+			</div>
+		</div>
+	</section>
+	
 	<section class="card3">
 		<img src="/assets/images/home/felixes1.png" alt="Test image, felix"> 
 		<h1>Hey there! My name is Roger.</h1>

@@ -23,4 +23,18 @@ indie_text3: Not only is it stylish, but it is designed with usability in mind. 
 indie_text4:
 indie_button: true
 indie_button_text: View Portfolio
+
+art_text1: I'm an artist.
+art_text2: In fact, I made this entire website.
+art_text3: Not only is it stylish, but it is designed with usability in mind. It's easy to update and modify with blog posts and custom pages without having to modify anything technical.
+art_text4:
+art_button: true
+art_button_text: View Portfolio
+
+youtube_text1: I'm a content creator.
+youtube_text2: I run the Youtube Channel <a href="https://www.youtube.com/@PunishedFelix">PunishedFelix.</a>
+youtube_text3: Not only is it stylish, but it is designed with usability in mind. It's easy to update and modify with blog posts and custom pages without having to modify anything technical.
+youtube_text4:
+youtube_button: true
+youtube_button_text: View Portfolio
 ---
