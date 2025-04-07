@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+	<head>
+		{%- include head.html -%}
+		<script src="/assets/js/home.js"></script> 
+		<link rel="stylesheet" href="/assets/css/home.css">
+	</head>
+
+	<body>
+	<div class="container">
+
+		{%- include header.html -%}
+
+		<main>
+
+			{%- include custom_titlecards.html -%}
+
+			<div class="home_content">
+				{{ content }}
+			</div>
+		</main>
+
+		{%- include footer.html -%}
+
+	</div>
+	</body>
+</html>

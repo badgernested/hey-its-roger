@@ -1,0 +1,15 @@
+@media (prefers-reduced-motion) {
+
+	.navbar {
+   		 transition: none;
+	}
+
+    #navbar_items {
+        transition: none;
+    }
+
+    .icon_button {
+        transition: none;
+    }
+
+}

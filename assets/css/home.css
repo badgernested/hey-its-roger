@@ -1,0 +1,241 @@
+.body {
+    overflow-y: none;
+}
+
+.container {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+
+.titlecard_items {
+    background-color: white;
+    text-align: center;
+    text-shadow: 2px 2px 0 #000;
+}
+
+.titlecard_items > section {
+    min-height:100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 0 100px rgba(0,0,0,0.9) inset;
+    scroll-snap-align: center;
+}
+
+footer {
+    scroll-snap-align: center;
+}
+
+.home_scroll_button {
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding: 0px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20pt;
+}
+
+.fa-solid.fa-sort-down {
+	position: relative;
+    animation-name: home_next_button;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.card_intro {
+    background-color: white;
+    text-shadow: none;
+}
+
+.card_button {
+	background-color: #0a0b71bc;
+	padding: 10px 20px;
+	text-decoration: none;
+	border: #00000052 4px solid;
+	color: #ffffffd1;
+	width: 300px;
+	font-size: 18pt;
+	font-weight: bold;
+	transition: background 0.5s, color 0.5s;
+}
+
+.card_button:hover {
+	background-color: #3032ff9c;
+	color: white;
+}
+
+.card_intro > img {
+    opacity: 0;
+}
+
+.intro_img.animation {
+    animation-name: home_title_intro;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+.card_intro > h1 {
+    opacity: 0;
+}
+
+.intro_title.animation {
+    animation-name: home_title_intro;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    margin: 5px 10px;
+}
+
+.intro_stage_1 {
+    opacity: 0;
+    margin: 0px;
+    font-size: 14pt;
+}
+
+.intro_stage_1.animation {
+    animation-name: home_title_intro;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+}
+
+.intro_stage_2 {
+    opacity: 0;
+    margin: 15px;
+    font-size: 10pt;
+    font-weight: normal;
+}
+
+.intro_stage_2.animation, 
+.card_intro_item.home_scroll_button.animation {
+    animation-name: home_title_intro;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+}
+
+.card_programmer {
+    background-color: black;
+    background-image: url("/assets/images/home/card_programming_bg.jpg"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.card_programmer {
+	flex-direction: row !important;
+}
+
+.card_programmer_left {
+	background-color: rgba(27, 54, 204, 0.53);
+	color: rgba(255, 255, 255, 0.89);
+	padding: 0 30px;
+	margin: auto;
+	backdrop-filter: blur(10px);
+	width: 500px;
+	min-height: inherit;
+	flex-direction: column;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+	margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.card_programmer_left_button {
+    width: 100%;
+}
+
+.card_programmer_left > h1 {
+   font-size: 32pt;
+   margin: 5vh 0;
+}
+
+.card_programmer_left > p {
+   font-size: 18pt;
+   font-weight: normal;
+   margin: 2vh 0;
+}
+
+.card_programmer_right {
+	background-image: url("/assets/images/home/test_img.png");
+	display: block;
+	width: 100vw;
+    min-height: inherit;
+	background-position-y: center;
+	background-position-x: right;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.card_indie {
+    background-color: blue;
+	flex-direction: row !important;
+}
+
+.card_indie_left {
+	background-image: url("/assets/images/home/test_img.png");
+	display: block;
+	min-width: 100vw;
+	min-height: inherit;
+	background-position-y: center;
+	background-position-x: left;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.card_indie_right {
+	background-color: rgba(70, 96, 238, 0.26);
+	color: rgba(255, 255, 255, 0.89);
+	padding: 0 30px;
+	margin: auto;
+	backdrop-filter: blur(10px);
+	width: 500px;
+	min-height: inherit;
+	flex-direction: column;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+	margin-right: 10vw;
+}
+
+.card_indie_bg {
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.card_indie_bg1 {
+    background-image: url("/assets/images/home/card_indie_bg1.jpg"); 
+}
+
+.card_indie_bg2 {
+    background-image: url("/assets/images/home/card_indie_bg2.jpg"); 
+}
+
+.card_indie_bg3 {
+    background-image: url("/assets/images/home/card_indie_bg3.jpg"); 
+}
+
+.end_animation {
+    animation-name: home_title_intro_out;
+    animation-duration: 0.25s;
+    animation-delay: 0s;
+}
+

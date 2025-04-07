@@ -1,0 +1,117 @@
+.navbar {
+    position: fixed;
+    margin: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 1;
+}
+
+.navbar:hover {
+    opacity: 1;
+}
+
+/* Style the navigation menu */
+.topbar {
+  overflow: hidden;
+  background-color: transparent;
+  position: relative;
+  text-decoration: none;
+  display: block;
+  height: 70px;
+}
+
+/* Style the hamburger menu */
+.topbar a.icon {
+	background: black;
+	color: #777;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 5%;
+	text-align: center;
+	font-size: 36px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_button {
+    background: rgba(0,0,0,0.2);
+    border: none;
+    color: #777;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    text-align: center;
+    font-size: 36px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.5s, color 0.5s;
+}
+
+.icon_button:hover {
+	background: rgba(0,0,0,0.5);
+	color: white;
+}
+
+/* Style navigation menu links */
+.topbar a {
+  text-decoration: none;
+  display: block;
+}
+
+/* Style the active link (or home/logo) */
+.navbar_home {
+    color: transparent;
+	font-family: "Permanent Marker", cursive;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 36px;
+    padding: 5px 25px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(16,0,57,1) 75%, rgba(0,212,255,0) 100%);
+	color: white;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+#navbar_items {
+	display: none;
+	float: right;
+	background-color: #152d64e5;
+	text-align: right;
+	width: 140px;
+	padding: 20px 10px 15px 10px;
+	margin: 0px;
+	list-style-type: none;
+	transition: background-color 0.5s;
+	position: relative;
+	top: -30px;
+	z-index: -1;
+}
+
+#navbar_items a {
+    padding: 5px 25px;
+    display: block;
+    font-size: 18px;
+    color: #bbb;
+}
+
+#navbar_items a:hover {
+    color: white;
+    background: rgba(0,0,0,0.33);
+}
+
+#navbar_items:hover {
+	background-color: #061c4f;
+}
