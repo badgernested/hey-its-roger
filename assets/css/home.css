@@ -127,7 +127,7 @@ footer {
 
 .card_programmer {
     background-color: black;
-    background-image: url("assets/images/home/card_programming_bg.jpg"); 
+    background-image: url("../../assets/images/home/card_programming_bg.jpg"); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -171,7 +171,7 @@ footer {
 }
 
 .card_programmer_right {
-	background-image: url("assets/images/home/test_img.png");
+	background-image: url("../../assets/images/home/test_img.png");
 	display: block;
 	width: 100vw;
     min-height: inherit;
@@ -187,7 +187,7 @@ footer {
 }
 
 .card_indie_left {
-	background-image: url("assets/images/home/test_img.png");
+	background-image: url("../../assets/images/home/test_img.png");
 	display: block;
 	min-width: 100vw;
 	min-height: inherit;
@@ -222,15 +222,15 @@ footer {
 }
 
 .card_indie_bg1 {
-    background-image: url("assets/images/home/card_indie_bg1.jpg"); 
+    background-image: url("../../assets/images/home/card_indie_bg1.jpg"); 
 }
 
 .card_indie_bg2 {
-    background-image: url("assets/images/home/card_indie_bg2.jpg"); 
+    background-image: url("../../assets/images/home/card_indie_bg2.jpg"); 
 }
 
 .card_indie_bg3 {
-    background-image: url("assets/images/home/card_indie_bg3.jpg"); 
+    background-image: url("../../assets/images/home/card_indie_bg3.jpg"); 
 }
 
 .end_animation {
