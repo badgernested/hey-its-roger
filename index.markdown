@@ -4,7 +4,7 @@
 
 layout: home
 title: Who? Roger?
-intro_image: /assets/images/home/felixes1.png
+intro_image: assets/images/home/felixes1.png
 intro_alt: Test image, felix
 intro_text1: Hey there! My name is Roger.
 intro_text2: I want to show you what I can do.
