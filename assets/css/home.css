@@ -78,6 +78,8 @@ footer {
 	font-size: 18pt;
 	font-weight: bold;
 	transition: background 0.5s, color 0.5s;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+          -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .card_button:hover {
@@ -185,7 +187,9 @@ footer {
 }
 
 .card_indie {
-    background-color: blue;
+    	background-color: black;
+	background-image: url("../../assets/images/home/card_game_bg.png");
+	
 }
 
 .card_indie_left {
@@ -218,6 +222,7 @@ footer {
 .card_art {
 	background-color: black;
 	background-image: url("../../assets/images/home/card_art_bg.jpg"); 
+	background-size: cover;
 }
 
 .card_art_left {
@@ -287,18 +292,18 @@ footer {
 }
 
 .card_youtube_left {
-	background-image: url("../../assets/images/home/test_img.png");
+	background-image: url("../../assets/images/home/felix_channel.png");
 	display: block;
 	min-width: 100vw;
 	min-height: inherit;
-	background-position-y: center;
-	background-position-x: left;
+	background-position-y: bottom;
+	background-position-x: 125px;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
 .card_youtube_right {
-	background-color: rgba(153, 15, 15, 0.50);
+	background-color: rgba(3, 13, 53, 0.5);
 	color: white;
 	padding: 0 30px;
 	margin: auto;
@@ -314,13 +319,32 @@ footer {
 }
 
 .card_youtube_right .card_button {
-	background-color: #680b0bbd;
+	background-color: #000000bd;
+	border-color: #66666652;
 }
 
 .card_youtube_right .card_button:hover {
-	background-color: #06959bbd;
+	background-color: #001877bd;
+	border-color: #4a4a4a52;
 }
 
+.card_contact {
+	flex-direction: row !important;
+	text-shadow: none;
+}
+
+.card_contact_left {
+	margin: auto 50px auto auto;
+}
+
+.card_contact_right {
+	margin: auto auto auto 50px;
+}
+
+.card_contact_right form {
+	display: flex;
+	flex-direction: column;
+}
 
 .end_animation {
     animation-name: home_title_intro_out;
